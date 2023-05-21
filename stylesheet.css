@@ -1,0 +1,15 @@
+.one {
+    color:blue;
+    font-size: large;
+    background-color: blueviolet;
+}
+.another-one{
+    color:rgb(211, 62, 62);
+    font-size: large;
+    background-color: rgb(44, 16, 70);
+}
+.one {   
+    color:rgb(62, 211, 99);
+    font-size: large;
+    background-color: rgb(88, 36, 5);
+}
