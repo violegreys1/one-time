@@ -1,0 +1,16 @@
+function normalizeUrl($sentence)
+{
+  if (strpos($sentence,'https://') === 0)
+  { 
+      return ($sentence);
+  }
+  else if (strpos($sentence,'http://') === 0)
+  {
+    return ('https://' . substr($sentence, 7));
+  }
+  else 
+  {
+     return ('https://' . $sentence); 
+  }
+}
+// эта функция для работы с If, else , else if
