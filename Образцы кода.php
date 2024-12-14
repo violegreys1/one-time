@@ -20,7 +20,7 @@ function normalizeUrl($sentence)// как найти определенную ч
 <?php
 function convertText($strochka)
 {   
-    if (ucfirst ($strochka) != 0)
+    if (ucfirst ($strochka) == $strochka) 
     {
     return ($strochka);
     }
@@ -29,12 +29,11 @@ function convertText($strochka)
      return strrev($strochka);
     }
 }
-  echo convertText('lello');
+  echo convertText('Hello');
 
  
  ТОЖЕ САМОЕ НО ПУТЕМ ТЕРНАРНОГО ОПЕРАТОРА 
-  function convertText($strochka)
-{  
-    return (ucfirst ($strochka) != 0)? $strochka: strrev($strochka);
+ function convertText($string)
+{
+    return $string[0] === strtoupper($string[0]) ? $string : strrev($string);
 }
-echo convertText('lello');
