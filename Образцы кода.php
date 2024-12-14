@@ -14,3 +14,26 @@ function normalizeUrl($sentence)// как найти определенную ч
   }
 }
 // эта функция для работы с If, else , else if
+
+
+<?php
+function convertText($strochka)
+{   
+    if (ucfirst ($strochka) != 0)
+    {
+    return ($strochka);
+    }
+    else 
+    {  
+     return strrev($strochka);
+    }
+}
+  echo convertText('lello');
+
+ 
+ ТОЖЕ САМОЕ НО ПУТЕМ ТЕРНАРНОГО ОПЕРАТОРА 
+  function convertText($strochka)
+{  
+    return (ucfirst ($strochka) != 0)? $strochka: strrev($strochka);
+}
+echo convertText('lello');
