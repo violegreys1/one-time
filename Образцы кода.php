@@ -1,3 +1,4 @@
+<?php
 function normalizeUrl($sentence)// как найти определенную часть из предложения 
 {
   if (strpos($sentence,'https://') === 0) // находит https:// в переменой $sentence
