@@ -37,3 +37,21 @@ function convertText($strochka)
 {
     return $string[0] === strtoupper($string[0]) ? $string : strrev($string);
 }
+Обрвзец простого калькултора для 2 чисел 
+  <?php
+  function calculate($symvol, $one, $two)
+{
+    switch ($symvol) {
+        case '+':
+            return ($one + $two);
+        case '-':
+            return ($one - $two);
+        case '/': 
+            return ($one / $two);
+        case '*':
+            return ($one * $two);
+        default:
+            return null;
+    }
+}
+echo calculate('/', 4, 5);
