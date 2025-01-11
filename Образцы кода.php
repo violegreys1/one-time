@@ -55,3 +55,19 @@ function convertText($strochka)
     }
 }
 echo calculate('/', 4, 5);
+
+
+
+Реализуйте функцию joinNumbersFromRange(), которая объединяет все числа из диапазона в строку. Функция должна вернуть полученную строку
+
+function joinNumbersFromRange($begin, $end)
+{
+    $i = $begin;
+    $result = '';
+    while ($i <= $end) {
+        $result = "{$result}{$i}";
+        $i = $i + 1;
+    }
+    return $result;
+}
+  echo joinNumbersFromRange(1,2);
